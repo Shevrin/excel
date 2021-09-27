@@ -1,0 +1,24 @@
+{
+	"name": "excel",
+	"version": "1.0.0",
+	"description": "Pure JavaScript Excel Application",
+	"main": "webpack.config.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Shevrin/excel.git"
+	},
+	"keywords": [
+		"JS",
+		"Javascript",
+		"Excel"
+	],
+	"author": "Shevrin Pavel <vestax747@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Shevrin/excel/issues"
+	},
+	"homepage": "https://github.com/Shevrin/excel#readme"
+}
