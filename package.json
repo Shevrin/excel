@@ -28,15 +28,11 @@
 	"devDependencies": {
 		"@babel/core": "^7.15.5",
 		"@babel/preset-env": "^7.15.6",
-		"babel-eslint": "^10.1.0",
 		"babel-loader": "^8.2.2",
 		"clean-webpack-plugin": "^4.0.0",
 		"copy-webpack-plugin": "^9.0.1",
 		"cross-env": "^7.0.3",
 		"css-loader": "^6.3.0",
-		"eslint": "^7.32.0",
-		"eslint-config-google": "^0.14.0",
-		"eslint-loader": "^4.0.2",
 		"html-webpack-plugin": "^5.3.2",
 		"mini-css-extract-plugin": "^2.3.0",
 		"sass": "^1.42.1",
@@ -46,6 +42,7 @@
 		"webpack-dev-server": "^4.3.0"
 	},
 	"dependencies": {
-		"@babel/polyfill": "^7.12.1"
+		"@babel/polyfill": "^7.12.1",
+		"normalize.css": "^8.0.1"
 	}
 }
