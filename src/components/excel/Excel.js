@@ -13,9 +13,9 @@ export class Excel {
 			// $el.innerHTML = component.toHTML()
 			// $el.insertAdjacentHTML('beforeend', component.toHTML())
 			//DEBUG
-			if (component.name) {
-				window['c' + component.name] = component
-			}
+			// if (component.name) {
+			// 	window['c' + component.name] = component
+			// }
 			$el.html(component.toHTML())
 			$root.append($el)
 			// console.log(component);
