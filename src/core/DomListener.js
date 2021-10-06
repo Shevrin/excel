@@ -14,7 +14,7 @@ export class DomListener {
 		this.listeners.forEach(listener => {
 			const method = capitaize(listener)
 			// console.log(method);
-			// console.log(listener, this.$root)
+			// // console.log(listener, this.$root)
 			if (!this[method]) {
 				throw new Error(`Method ${method} isn't implemented in ${this.name || ''} Component`)
 			}

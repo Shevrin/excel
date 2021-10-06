@@ -4,18 +4,26 @@ const CODES = {
 }
 const colsCount = CODES.Z - CODES.A + 1
 
-function toCell() {
+function toCell(_, index) {
+	// console.log(index);
 	return `
-	<div class="cell" contenteditable></div>`
+	<div class="cell" contenteditable data-col="${index}"></div>`
 }
-function toColumn(content) {
+function toColumn(content, index) {
+	// console.log(index);
 	return `
-	<div class="column">${content}</div>`
+	<div class="column-info" data-type="resizable" data-col="${index}">${content}
+	<div class="column-resize" data-resize="col"></div>
+	</div>`
 }
 function createRow(rowIndex, content) {
+	const resizer = rowIndex ? `<div class="row-resize" data-resize="row"></div>` : ''
 	return `
-	<div class="row">
-	<div class="row-info">${rowIndex ? rowIndex : ''}</div>
+	<div class="row" data-type="resizable">
+	<div class="row-info">
+		${rowIndex ? rowIndex : ''}
+	${resizer}
+		</div>
 	<div class="row-data">${content}</div>
 	</div>`
 }
@@ -45,3 +53,4 @@ export const createTable = (rowsCount = 15) => {
 	}
 	return rows.join('')
 }
+
